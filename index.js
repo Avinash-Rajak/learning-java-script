@@ -27,6 +27,13 @@
 // increment the count variables when the button is clicked
 // change the counter-el in the html to reflect the new count
 
+let count = 0
+
 function increment(){
-    console.log("The button was clicked")
-}
+    console.log("Clicked")
+    count = count + 1
+    console.log (count)
+} 
+
+
+ 
