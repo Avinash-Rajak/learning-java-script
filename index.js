@@ -47,8 +47,8 @@ function save() {
     // saveEl.innerText += entry;
     saveEl.textContent += entry;
     console.log(count);
-    ountEl.innerText = 0
-
+    countEl.innerText = 0
+    count = 0
 }
 
 // let username = "per"
