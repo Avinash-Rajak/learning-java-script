@@ -47,7 +47,7 @@ function save() {
     // saveEl.innerText += entry;
     saveEl.textContent += entry;
     console.log(count);
-    
+    ountEl.innerText = 0
 
 }
 
