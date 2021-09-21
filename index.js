@@ -44,8 +44,11 @@ let saveEl = document.getElementById("save-el");
 function save() {
     let entry = count + " - ";
     // saveEl.innerText = entry;
-    saveEl.innerText += entry;
+    // saveEl.innerText += entry;
+    saveEl.textContent += entry;
     console.log(count);
+    
+
 }
 
 // let username = "per"
