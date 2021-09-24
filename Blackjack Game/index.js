@@ -1,7 +1,7 @@
 let firstCard = 10
 let secondCard = 18
 
-let sum = firstCard + secondCard + 4
+let sum = firstCard + secondCard 
 
 let cashOut = false
 let isAlive = true
