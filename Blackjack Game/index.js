@@ -5,6 +5,8 @@ let sum = firstCard + secondCard
 
 let cashOut = false
 let isAlive = true
+
+let message = ""
 console.log (sum)
 
 if (sum < 21){
