@@ -23,8 +23,15 @@ function removepoints(){
     mypoint -= 1
 }
 
+let errorButton = document.getElementById("error-el");
+console.log(errorButton);
 
+function error(){
+    // let meaasge = ""
+    console.log("Button Clicked");
+    errorButton.textContent = "Something went wrong"
 
-
+    
+}
  
 
