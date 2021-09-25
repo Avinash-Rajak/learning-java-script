@@ -1,6 +1,6 @@
-let firstCard = 10
-let secondCard = 1
-
+let firstCard = 1
+let secondCard = 4
+let cards = [firstCard , secondCard ];
 let sum = firstCard + secondCard 
 
 let cashOut = false
@@ -14,10 +14,14 @@ let sumEl = document.getElementById ("sum-el")
  let cardsEl = document.getElementById ("cards-el")
 console.log (sum)
 
+
 function startGame(){
-    cardsEl.textContent = "Cards: " + firstCard + "" + secondCard;
+    renderGame()
+}
+function renderGame(){
+    cardsEl.textContent = "Cards: " + cards[0] + " "  + cards[1];
     sumEl.textContent = "Sum :" +  sum;
-    sum = sum+1
+    
     if (sum < 21)
     {
         message = "Do you want to draw a new card ? 😊";
@@ -37,5 +41,13 @@ function startGame(){
 
 // console.log (cashOut)
 
+}
+
+function newCard(){
+    console.log ("Drawing a new card from the deck")
+
+    let card = 7
+    sum = sum + card;
+    renderGame()
 }
 
