@@ -44,10 +44,19 @@ function renderGame(){
 }
 
 function newCard(){
-    console.log ("Drawing a new card from the deck")
+    // console.log ("Drawing a new card from the deck")
 
     let card = 7
     sum = sum + card;
     renderGame()
+    cards.push(card)
 }
+
+let sent = ["Hello, ", "my ", "name ", "is ", "Per"]
+
+let greetingEl = document.getElementById("greeting-el");
+
+for (let i = 0; i < sent.length; i++){
+    greetingEl.textContent += sent [i]
+ }
 
