@@ -1,5 +1,7 @@
-let firstCard = getRandomcard ()
-let secondCard = getRandomcard();
+let firstCard = getRandomCard ();
+let secondCard = getRandomCard();
+// let firstCard = 5;
+// let secondCard = 10;
 let cards = [firstCard , secondCard ];
 let sum = firstCard + secondCard 
 
@@ -12,6 +14,10 @@ let messageEl = document.getElementById("message-el");
 
 let sumEl = document.getElementById ("sum-el")
  let cardsEl = document.getElementById ("cards-el")
+
+ function getRandomCard(){
+    return 5
+ }
 console.log (sum)
 
 
@@ -50,10 +56,13 @@ function renderGame(){
 function newCard(){
     // console.log ("Drawing a new card from the deck")
 
-    let card = 7
+    let card = getRandomCard();
+    // let card = 4;
     sum = sum + card;
+    cards.push(card);
+    console.log (cards)
     renderGame()
-    cards.push(card)
+   
 }
 
 // let sent = ["Hello, ", "my ", "name ", "is ", "Per"]
@@ -63,4 +72,8 @@ function newCard(){
 // for (let i = 0; i < sent.length; i++){
 //     greetingEl.textContent += sent [i]
 //  }
+
+let p1 = 102
+let p2 = 22
+
 
