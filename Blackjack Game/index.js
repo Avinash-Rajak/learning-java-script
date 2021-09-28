@@ -131,9 +131,15 @@ function newCard(){
 
 
 
-let list = {
-    bollean: true,
-    string: "hii avi",
-    number: 2,
-    string: ["hii", "hello"]
-}
+// let list = {
+//     bollean: true,
+//     string: "hii avi",
+//     number: 2,
+//     string: ["hii", "hello"]
+// }
+
+// let person = {
+//     name: "Avi",
+//     age: 19,
+//     country = "Ind"
+// }
