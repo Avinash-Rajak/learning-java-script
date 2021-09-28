@@ -1,12 +1,13 @@
-let firstCard = getRandomCard ();
-let secondCard = getRandomCard();
+// let firstCard = getRandomCard ();
+// let secondCard = getRandomCard();
 // let firstCard = 5;
 // let secondCard = 10;
-let cards = [firstCard , secondCard ];
-let sum = firstCard + secondCard 
+// let cards = [firstCard , secondCard ];
+let cards = [];
+let sum = 0
 
 let cashOut = false
-let isAlive = true
+let isAlive = false 
 
 let message = ""
 
@@ -38,8 +39,12 @@ let cardsEl = document.getElementById ("cards-el")
 console.log (sum)
 
 
-function startGame(){
-    renderGame()
+function startGame() {
+  renderGame();
+  isAlive = true;
+  let firstCard = 1;
+  let secondCard = 2
+  sum = firstCard + secondCard; 
 }
 function renderGame(){
     cardsEl.textContent = "Cards: " ;
