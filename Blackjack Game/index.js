@@ -5,16 +5,32 @@
 // let cards = [firstCard , secondCard ];
 let cards = [];
 let sum = 0
-
+let hasblackjack = false;
 let cashOut = false
 let isAlive = false 
-
 let message = ""
-
 let messageEl = document.getElementById("message-el");
-
 let sumEl = document.getElementById ("sum-el")
 let cardsEl = document.getElementById ("cards-el")
+
+let player = {
+    name : "User",
+    chips : 256
+}
+
+
+let playerEl = document.getElementById("player-el");
+
+playerEl.textContent = player.name + ": $" + player.chips
+
+// let playerName = "User"
+// let playerChips = 256
+
+// let playerEl = document.getElementById("player-el");
+
+// playerEl.textContent = playerName + ": $" + playerChips
+
+console.log (cards)
 
  function getRandomCard(){
     // return Math.floor(Math.random() * 13) + 1;
@@ -40,11 +56,12 @@ console.log (sum)
 
 
 function startGame() {
-  renderGame();
   isAlive = true;
-  let firstCard = 1;
-  let secondCard = 2
+  let firstCard = getRandomCard();
+  let secondCard = getRandomCard();
+  cards = [firstCard, secondCard];
   sum = firstCard + secondCard; 
+  renderGame();
 }
 function renderGame(){
     cardsEl.textContent = "Cards: " ;
@@ -61,7 +78,8 @@ function renderGame(){
      else if(sum === 21)
      {
         message = "Woohhoo! You have a BlackJack!!!! 🎉";
-        cashOut = true
+        // cashOut = true
+        hasblackjack = true
     } 
     else if(sum > 21)
     {
@@ -76,14 +94,13 @@ function renderGame(){
 }
 
 function newCard(){
-    // console.log ("Drawing a new card from the deck")
-
-    let card = getRandomCard();
-    // let card = 4;
-    sum = sum + card;
-    cards.push(card);
-    console.log (cards)
-    renderGame()
+    if (isAlive === true && hasblackjack === false) {
+      let card = getRandomCard();
+      sum = sum + card;
+      cards.push(card);
+      // console.log (cards)
+      renderGame();
+    }
    
 }
 
@@ -113,3 +130,10 @@ function newCard(){
 // console.log (rollDice())
 
 
+
+let list = {
+    bollean: true,
+    string: "hii avi",
+    number: 2,
+    string: ["hii", "hello"]
+}
