@@ -13,10 +13,27 @@ let message = ""
 let messageEl = document.getElementById("message-el");
 
 let sumEl = document.getElementById ("sum-el")
- let cardsEl = document.getElementById ("cards-el")
+let cardsEl = document.getElementById ("cards-el")
 
  function getRandomCard(){
-    return 5
+    // return Math.floor(Math.random() * 13) + 1;
+    let randomNumber = Math.floor(Math.random() * 13) + 1;
+    if (randomNumber === 1 ){
+        return 11
+    }
+    else if(randomNumber === 11){
+        return 10
+    }
+    else if(randomNumber === 12){
+        return 10
+    }
+    else if(randomNumber === 13){
+        return 10
+    }
+
+    else{
+      return randomNumber;   
+    }
  }
 console.log (sum)
 
@@ -73,7 +90,21 @@ function newCard(){
 //     greetingEl.textContent += sent [i]
 //  }
 
-let p1 = 102
-let p2 = 22
+// let randomNumber = Math.random() * 6
+// console.log (randomNumber)
+
+// let flooredNumber = Math.floor(7.4567)
+// console.log(flooredNumber);
+
+// let randomNumber = Math.floor(Math.random() * 6) + 1;
+// console.log (randomNumber)
+
+// function rollDice(){
+//     let randomNumber = Math.floor(Math.random() * 6) + 1;
+//     return randomNumber; 
+    
+// }
+
+// console.log (rollDice())
 
 
