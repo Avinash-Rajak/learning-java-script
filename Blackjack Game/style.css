@@ -1,7 +1,7 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    background-image: url(/assets/bg.jpeg);
+    background-image: url(/bg.png);
     background-size: cover;
     color: white;
     font-weight: bold;
