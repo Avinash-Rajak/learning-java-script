@@ -7,7 +7,7 @@ inputBtn.addEventListener("click", function () {
   console.log(myLeads);
 });
 
-for (let myLeads = i; i = myLeads.length; i++ ){
-    console.log(myLeads);
+for (let i = 0; i < myLeads.length; i++){
+    console.log(myLeads [i])
 }
 
