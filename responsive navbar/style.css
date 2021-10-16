@@ -51,11 +51,11 @@ nav {
   background-color: rgb(226, 226, 226);
   margin: 5px;
 }
-@media  screen and (max-width: 1024px) {
+/* @media  screen and (max-width: 1024px) {
    .nav-links{
        width: %;
    }
-}
+} */
 
 
 @media  screen and (max-width: 937px) {
@@ -86,4 +86,14 @@ nav {
    .nav-active{
        transform: translateX(0%);
    }
+}
+
+@keyframes navLinkfade {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
 }
