@@ -28,7 +28,7 @@ nav {
 
 .nav-links li {
   list-style: none;
-  margin-right: 30px;
+  /* margin-right: 30px; */
   
 }
 
@@ -50,9 +50,27 @@ nav {
   background-color: rgb(226, 226, 226);
   margin: 5px;
 }
+@media  screen and (max-width: 1024px) {
+   .nav-links{
+       width: %;
+   }
+}
+
 
 @media  screen and (max-width: 937px) {
     body{
-        display: none;
+        overflow-x: hidden;
     }
+
+   .nav-links{
+       position: absolute;
+       right: 0px;
+       height: 92vh;
+       top: 8vh;
+       background-color: #5d4954;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       transform: translateX(100%);
+   }
 }
