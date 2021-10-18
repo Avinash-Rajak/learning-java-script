@@ -9,11 +9,11 @@ const navSlide = () => {
     });
 
     //animate links
-    navLinks.forEach((link, index) => {
-        // link.style.animate = 'navLinkFade 0.5s ease forwards $(index / 7+2)s';
-        link.style.animation = 'navLinkfade 0.5s ease forwards $(index / 7 + 0.3)s';
-        // console.log(index / 7);
-    }) 
+    // navLinks.forEach((link, index) => {
+        
+    //     link.style.animation = 'navLinkfade 0.5s ease forwards $(index / 7 + 0.3)s';
+        
+    // }) 
 }
 
 navSlide();
