@@ -13,13 +13,17 @@ function start(){
 }
 
 function stop(){
-
+    timer = false
 }
 
 function reset(){
-
+    timer = false;
 }
 
 function stopWatch(){
+    if(timer == true){
 
+
+        setTimeout("stopWatch()",10);
+    }
 }
