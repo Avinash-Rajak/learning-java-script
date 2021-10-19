@@ -5,9 +5,7 @@ let count = 0
 
 let timer = false
 
-let hrString = hr
-let minString = min
-let secString = sec
+
 
 
 function start(){
@@ -54,19 +52,28 @@ function stopWatch(){
             sec = 0
         }
 
+        // let hrString = hr;
+        // let minString = min;
+        // let secString = sec;
+        // let countString = count;
+
         if (hrString < 10){
-            document.getElementById("hr").innerHTML = "0" + hr;
+            hrString = "0" + hrString
         }
         if (minString < 10){
-            document.getElementById("min").innerHTML = "0" + min;
+            minString = "0" + minString;
         }
         if (secString < 10){
-            document.getElementById("sec").innerHTML = "0" + sec;
+            secString = "0" + secString;
         }
-        document.getElementById("hr").innerHTML = hr;
-        document.getElementById("min").innerHTML = min;
-        document.getElementById("sec").innerHTML =  sec;
-        document.getElementById("count").innerHTML = count
+        if (countString < 10){
+            countString = "0" + countString;
+        }
+
+        document.getElementById("hr").innerHTML = hrString;
+        document.getElementById("min").innerHTML = minString;
+        document.getElementById("sec").innerHTML =  secString;
+        document.getElementById("count").innerHTML = countString;
 
         setTimeout("stopWatch()",10);
     }
