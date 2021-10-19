@@ -52,10 +52,10 @@ function stopWatch(){
             sec = 0
         }
 
-        // let hrString = hr;
-        // let minString = min;
-        // let secString = sec;
-        // let countString = count;
+        let hrString = hr;
+        let minString = min;
+        let secString = sec;
+        let countString = count;
 
         if (hrString < 10){
             hrString = "0" + hrString
