@@ -19,5 +19,11 @@ body{
 .txt{
     font-size: 40px;
     font-weight: bold;
+
+}
+
+#btn-container{
+    text-align: center;
+    margin-top: 40px;
     
 }
