@@ -25,5 +25,25 @@ body{
 #btn-container{
     text-align: center;
     margin-top: 40px;
-    
+}
+
+.btn{
+    padding: 14px 50px;
+    font-size: 30px;
+    margin: 0px 50px;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+}
+
+#start{
+    background-color: #1abc9c;
+}
+
+#stop{
+   background-color:#3498db ; 
+}
+
+#reset{
+    background-color: #e74c3c;
 }
