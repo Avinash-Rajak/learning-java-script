@@ -7,4 +7,5 @@ const nextBtn = document.querySelector("#next");
 let counter = 1
 const size = carouselImg[0].clientWidth;
 
-carouselSlide.style.transform = 
+carouselSlide.style.transform = 'translatex(' + (-size * counter)+'px)';
+
