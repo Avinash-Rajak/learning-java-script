@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+}
+.slide-container{
+    position: relative;
+    width: 100%;
+    /* margin-left: 11px; */
+}
+
+.slide img{
+    width: 100%;
+}
