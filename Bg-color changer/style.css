@@ -17,11 +17,15 @@ h1{
 
 .btn{
     width: 20px;
-    height: 20px;
+    height: 30px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 #white{
     background-color: white;
+    
 }
 
 #aque{
@@ -34,4 +38,8 @@ h1{
 
 #black{
     background-color: black;
+}
+
+#color-switch{
+    text-align: right;
 }
