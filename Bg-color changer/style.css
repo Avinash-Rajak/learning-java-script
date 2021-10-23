@@ -9,7 +9,7 @@ h1{
     text-decoration: underline;
 }
 
-.container img{
+.container1 img{
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -42,4 +42,9 @@ h1{
 
 #color-switch{
     text-align: right;
+}
+
+p{
+    font-size: 18px;
+    text-align: justify;
 }
