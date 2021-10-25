@@ -109,3 +109,12 @@ input {
 .delete {
 	display: none;
 }
+
+/* #bin{
+    display: none;
+} */
+
+#delete-btn{
+
+    /* display: block; */
+}

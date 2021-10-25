@@ -75,6 +75,7 @@ const inputEl = document.getElementById("userInput");
 const inputBtn = document.getElementById("enter");
 const ulEl = document.getElementById("ul-el");
 const deleteBtn = document.getElementById("delete-btn");
+const remove = document.getElementById("bin")
 // const tabBtn = document.getElementById("tab-btn");
 
 let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
@@ -84,7 +85,7 @@ if (leadsFromLocalStorage) {
   renderLeads();
 }
 
-tabBtn.addEventListener("click", function () {});
+// tabBtn.addEventListener("click", function () {});
 
 deleteBtn.addEventListener("dblclick", function () {
   localStorage.clear();
@@ -99,15 +100,19 @@ inputBtn.addEventListener("click", function () {
   renderLeads();
 });
 
+
+// remove.addEventListener("click", function(elementNum){
+//     myLeads.()
+// })
 function renderLeads() {
+    console.log(inputEl.value)
   let listElements = "";
   for (let i = 0; i < myLeads.length; i++) {
     listElements += `
         <li>
-            <a href="${myLeads[i]}" target="_blank">
-                 ${myLeads[i]} 
-            </a>
+            ${myLeads[i]}
         </li>`;
+
   }
   ulEl.innerHTML = listElements;
 }
