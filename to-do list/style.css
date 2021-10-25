@@ -1,5 +1,5 @@
 body {
-	background: #04A1BF;
+	background: #08c9eb;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-	color: #ffffff;
+	color: #000000;
 	text-transform: uppercase;
 	font-weight: 800;
 }
@@ -21,7 +21,8 @@ p {
 
 #first {
 	margin-top: 10px;
-	color: #FFCD5D;
+	color: green;
+    font-size: 30px;
 }
 
 #second {
