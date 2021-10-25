@@ -21,18 +21,20 @@ p {
 
 #first {
 	margin-top: 10px;
-	color: green;
+	color: rgb(6, 4, 155);
     font-size: 30px;
 }
 
-#second {
+/* #second {
 	color: #51DF70;
 
-}
+} */
 
 #third {
-	color: #025F70;
+	color: #700202;
 	margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 
@@ -41,7 +43,7 @@ p {
 	padding: 5px 15px;
 	border-radius: 5px;
 	color: #04A1BF;
-	background-color: #025F70;
+	background-color: black;
 	transition: all 0.75s ease;
 	-webkit-transition: all 0.75s ease;
 	-moz-transition: all 0.75s ease;
@@ -67,10 +69,10 @@ li {
 	color: #ffffff;
 	text-transform: capitalize;
 	font-weight: 600;
-	border: 2px solid #025f70;
+	border: 2px solid #02705e;
 	border-radius: 5px;
 	margin-bottom: 10px;
-	background: #4EB9CD;
+	background: rgb(2, 111, 131);
 	transition: all 0.75s ease;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -79,7 +81,7 @@ li {
 }
 
 li:hover {
-	background: #76CFE0;
+	background: rgb(21, 200, 231);
 }
 
 li > button {
