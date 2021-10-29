@@ -30,7 +30,9 @@ inputBtn.addEventListener("click", function () {
   renderLeads();
 });
 
-
+remove.addEventListener("click",function(elementNum){
+  myLeads.  
+})
 // remove.addEventListener("click", function(elementNum){
 //     myLeads.()
 // })
@@ -39,7 +41,7 @@ function renderLeads() {
   let listElements = "";
   for (let i = 0; i < myLeads.length; i++) {
     listElements += `
-        <li>
+        <li >
             ${myLeads[i]}
         </li>`;
 
