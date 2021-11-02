@@ -23,4 +23,3 @@ func1().then(function(){
 }).catch(function(error){
     console.log("Person: Bad work buddy" + " " + error)
 })
-
