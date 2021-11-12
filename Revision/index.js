@@ -29,3 +29,19 @@ fruits.push("mangoes")
 fruits.unshift("Strawberries")
 console.log(fruits.indexOf("watermelon"));
 console.log(fruits)
+
+const person ={
+    firstName: "Avi",
+    lastName: "Rajak",
+    age: 30,
+    hobbies: ["Music", "books"],
+    address:{
+        street: "idk",
+        city: "mum",
+        state: "NA"
+    }
+}
+
+console.log (person.lastName, person.firstName)
+console.log(person.hobbies[1])
+console.log(person.address.city)
