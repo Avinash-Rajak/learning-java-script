@@ -18,3 +18,5 @@ let s = "hello world"
 console.log(s.length)
 console.log(s.toLocaleUpperCase());
 
+// arrays
+
