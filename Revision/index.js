@@ -16,4 +16,5 @@ console.log(`My name is ${namee} and my age is ${age}`);
 let s = "hello world"
 
 console.log(s.length)
+console.log(s.toLocaleUpperCase());
 
