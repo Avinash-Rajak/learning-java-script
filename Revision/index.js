@@ -84,3 +84,24 @@ const todoCompleted = todos.filter(function(todo) {
 })
 
 console.log(todoCompleted)
+
+// Ternary Operator
+
+const x = 10
+
+//  if color  x > 10 then "red" : "blue"
+const color = x > 10   ?  "red"  : "blue" 
+
+console.log(color)
+
+switch (color){
+    case "red":
+        console.log("Color is red")
+        break;
+    case "blue":
+        console.log("Color is blue")
+        break;
+    default:
+        console.log("Color is NOT blue or red")
+        break;
+}
