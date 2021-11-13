@@ -107,8 +107,20 @@ switch (color){
 }
 
 
-function addNums(Num1= 2, Num2= 4) {
-    console.log(Num1 + Num2);
-}
+// function addNums(Num1= 2, Num2= 4) {
+//     console.log(Num1 + Num2);
+// }
 
-addNums()
+// addNums()
+
+// function addNums(Num1= 2, Num2= 4) {
+//     return  Num1 + Num2;
+// }
+
+// console.log(addNums(5,5))
+
+// Arrow Function !!!!!!
+const addNums = (Num1, Num2) => Num1+Num2
+
+console.log(addNums(5,4))
+
