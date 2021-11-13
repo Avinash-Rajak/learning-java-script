@@ -42,6 +42,9 @@ const person ={
     }
 }
 
+person.email = "avi@gmail.com"
 console.log (person.lastName, person.firstName)
 console.log(person.hobbies[1])
 console.log(person.address.city)
+
+console.log(person)
