@@ -105,3 +105,10 @@ switch (color){
         console.log("Color is NOT blue or red")
         break;
 }
+
+
+function addNums(Num1= 2, Num2= 4) {
+    console.log(Num1 + Num2);
+}
+
+addNums()
