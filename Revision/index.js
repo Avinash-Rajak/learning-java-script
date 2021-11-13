@@ -48,3 +48,39 @@ console.log(person.hobbies[1])
 console.log(person.address.city)
 
 console.log(person)
+
+const todos = [
+    {
+        id: 1,
+        text: "Clean up the trash",
+        iscompleted : true
+    },
+    {
+        id: 2,
+        text: "Meeting",
+        iscompleted : true
+    },
+    {
+        id: 3,
+        text: "Appt idk",
+        iscompleted : false
+    },
+]
+
+// console.log(todos[1].text)
+
+const todojson = JSON.stringify(todos);
+console.log(todojson)
+
+// foreach, map, filter
+todos.forEach(function(todo){
+    console.log(todo.text)
+})
+
+const todoCompleted = todos.filter(function(todo) {
+    return todo.iscompleted === true;
+}).map(function (todo) {
+    return todo.text
+})
+
+console.log(todoCompleted)
