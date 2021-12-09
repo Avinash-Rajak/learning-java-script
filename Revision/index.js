@@ -87,10 +87,10 @@ console.log(todoCompleted)
 
 // Ternary Operator
 
-const x = 10
+const x = 20
 
 //  if color  x > 10 then "red" : "blue"
-const color = x > 10   ?  "red"  : "blue" 
+const color = x > 20   ?  "red"  : "blue" 
 
 console.log(color)
 
